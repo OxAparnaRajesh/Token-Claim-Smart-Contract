@@ -1,0 +1,22 @@
+This is Token claim smart contract.
+Created enum - claim for claim status.
+```enum Claim {
+        notClaimed,
+        claimed
+    }
+    ```
+
+
+100 token transfer to the wallet from the DT token (here).
+
+created a mapping for address and enum for the particular address is clamied or not.
+
+```    mapping(address => Claim) public isClaimed; ```
+In the function of claim..
+1. checking wheteher the token contract has tokens for claiming.
+2.checking whether the wallet address is claimed the token or not.
+3.The wallet should be claim one time.
+4. transfer the tokens.
+5.claim status changed.
+
+``` end ```
